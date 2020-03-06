@@ -1,0 +1,37 @@
+$primary: #7b34b1;
+$red: #ff3945;
+
+@import "bootstrap/bootstrap";
+
+.navbar,
+.footer {
+    border-bottom: 4px solid $red;
+}
+
+.about {
+    background-image: url("../images/bg-about.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.faq {
+    background-color: #443a50;
+
+    .nav-link {
+        color: white;
+        opacity: 0.5;
+        &.active {
+            opacity: 1;
+            background-color: transparent;
+        }
+    }
+
+    .card-header {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+.login {
+    background-image: linear-gradient(to right bottom, $primary 30%, $red);
+    height: 100vh;
+}
